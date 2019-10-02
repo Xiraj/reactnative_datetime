@@ -37,14 +37,14 @@ export default class DateTimePickerTester extends Component {
           style={styles.button}
           onPress={this.showDateTimePicker}
         >
-          <Text style={styles.text}>DateTime</Text>
+          <Text style={styles.text}>Waktu</Text>
         </TouchableOpacity>
         <DateTimePicker
           isVisible={this.state.isDateTimePickerVisible}
           onConfirm={this.handleDatePicked}
           onCancel={this.hideDateTimePicker}
           mode={"datetime"}
-          // datePickerModeAndroid={'spinner'}
+          datePickerModeAndroid={'spinner'}
           is24Hour={false}
         />
       </View>
